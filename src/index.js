@@ -1,3 +1,4 @@
+import "./style.css";
 import homepage from "./pages/homepage.js";
 import menu from "./pages/menu.js";
 import about from "./pages/about.js";
