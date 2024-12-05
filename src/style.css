@@ -13,6 +13,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+body {
+  height: 100vh;
+}
 header {
   padding: 16px;
   background-color: var(--dark-primary);
@@ -20,6 +24,37 @@ header {
   display: flex;
   align-items: center;
   gap: 5rem;
+}
+.home {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.home img {
+  grid-row: 1 / 4;
+  grid-column: 2 / -1;
+  justify-self: center;
+  align-self: center;
+}
+.home h1 { 
+  align-self: end;
+}
+.home button { 
+  align-self:first baseline;
+  justify-self: last baseline;
+  border: none;
+  background-color: var(--accent);
+  color: var(--text-icons);
+  font-size: 1.5rem;
+  width: 12rem;
+  height: 4rem;
+  border-radius: 32px;
+}
+.home button:hover {
+  background-color: var(--primary);
 }
 .logo {
   font-size: 2rem;
