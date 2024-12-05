@@ -41,8 +41,12 @@ const menuPage = () => {
     const cardPrice = document.createElement('p');
     const cardDescription = document.createElement('p');
 
+    cardTitle.classList.add('card-title');
+    cardPrice.classList.add('card-price');
+    cardDescription.classList.add('card-desc');
+
     cardTitle.textContent = menuItem.item;
-    cardPrice.textContent = menuItem.price;
+    cardPrice.textContent = "$" + menuItem.price;
     cardDescription.textContent = menuItem.description;
 
     card.append(cardTitle);
