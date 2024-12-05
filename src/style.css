@@ -25,11 +25,14 @@ header {
   align-items: center;
   gap: 5rem;
 }
+
+#content {
+  padding: 3rem;
+}
 .home {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  padding: 3rem;
   gap: 2rem;
 }
 
@@ -48,9 +51,8 @@ header {
   border: none;
   background-color: var(--accent);
   color: var(--text-icons);
-  font-size: 1.5rem;
-  width: 12rem;
-  height: 4rem;
+  width: 8rem;
+  height: 3rem;
   border-radius: 32px;
 }
 .home button:hover {
