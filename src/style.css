@@ -83,6 +83,9 @@ header {
   justify-self: center;
   align-self: center;
 }
+.about h1, .about h1 + p,  .about h2 { 
+  margin-bottom: 1rem;
+}
 .card-desc {
   grid-row: 2 / 3;
   grid-column: 1 / 3;
